@@ -5,7 +5,7 @@ on:
   push:
     branches: [ "main" ]
     paths:
-      - "server.js"
+      - "index.js"
       - "package.json"
       - "Dockerfile"
   workflow_dispatch:
