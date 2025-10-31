@@ -2,13 +2,13 @@
   "name": "universal-subscription",
   "version": "1.0.0",
   "description": "Universal multi-client subscription service (Clash Meta / Sing-box / NekoBox / Karing / Shadowrocket)",
-  "main": "server.js",
+  "main": "index.js",
   "author": "eooce",
   "license": "MIT",
   "private": false,
   "scripts": {
-    "dev": "node server.js",
-    "start": "node server.js"
+    "dev": "node index.js",
+    "start": "node index.js"
   },
   "dependencies": {
     "express": "^4.18.2"
