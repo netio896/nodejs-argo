@@ -1,15 +1,16 @@
-FROM node:alpine3.20
+# Dockerfile
+FROM node:20-alpine
 
-WORKDIR /tmp
+WORKDIR /app
+COPY package.json ./
+RUN npm ci --only=production || npm i --only=production
 
-COPY . .
+COPY server.js ./
 
-EXPOSE 3000/tcp
+ENV PORT=3000
+ENV SERVER_PORT=3000
+ENV FILE_PATH=/app/tmp
 
-RUN apk update && apk upgrade &&\
-    apk add --no-cache openssl curl gcompat iproute2 coreutils &&\
-    apk add --no-cache bash &&\
-    chmod +x index.js &&\
-    npm install
+EXPOSE 3000
 
-CMD ["node", "index.js"]
+CMD ["node", "server.js"]
