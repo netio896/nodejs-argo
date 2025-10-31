@@ -1,18 +1,16 @@
 {
-  "name": "nodejs-argo",
-  "version": "1,0,0",
-  "description": "Thsi is a node project",
-  "main": "index.js",
+  "name": "universal-subscription",
+  "version": "1.0.0",
+  "description": "Universal multi-client subscription service (Clash Meta / Sing-box / NekoBox / Karing / Shadowrocket)",
+  "main": "server.js",
   "author": "eooce",
-  "repository": "",
   "license": "MIT",
   "private": false,
   "scripts": {
-    "dev": "node index.js",
-    "start": "node index.js"
+    "dev": "node server.js",
+    "start": "node server.js"
   },
   "dependencies": {
-    "axios": "latest",
     "express": "^4.18.2"
   },
   "engines": {
