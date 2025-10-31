@@ -13,4 +13,4 @@ ENV FILE_PATH=/app/tmp
 
 EXPOSE 3000
 
-CMD ["node", "server.js"]
+CMD ["node", "index.js"]
