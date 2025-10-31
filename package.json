@@ -3,6 +3,13 @@
   "version": "1.0.0",
   "description": "A universal multi-protocol (VLESS, VMESS, TROJAN) subscription service generator for Clash Meta, Sing-box, NekoBox, Karing, and Sub-Store clients.",
   "main": "server.js",
+  "author": {
+    "name": "netio",
+    "email": "support@diytv.online",
+    "url": "https://github.com/netio896"
+  },
+  "license": "MIT",
+  "private": false,
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js"
@@ -12,6 +19,9 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=14"
   },
   "keywords": [
     "clash",
@@ -27,12 +37,6 @@
     "express",
     "docker"
   ],
-  "license": "MIT",
-  "author": {
-    "name": "netio",
-    "email": "support@diytv.online",
-    "url": "https://github.com/netio896"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/netio896/universal-subscription.git"
